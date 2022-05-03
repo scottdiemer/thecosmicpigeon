@@ -4,6 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: { lobster: ["Lobster"], daughter: ["Architects Daughter"] },
     extend: {},
   },
   plugins: [],

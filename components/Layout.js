@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "./Header";
 import Navbar from "./Navbar";
 
 export default function Layout({ title = "The Cosmic Pigeon", children }) {
@@ -10,9 +11,9 @@ export default function Layout({ title = "The Cosmic Pigeon", children }) {
         <meta name="description" content="An eclectic mix of handicrafts" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </Head>
-      <header>
+      <Header>
         <Navbar />
-      </header>
+      </Header>
       <main>{children}</main>
     </>
   );
