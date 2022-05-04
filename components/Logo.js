@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-export default function Logo() {
+export default function Logo({ size = 150, className }) {
   return (
-    <div className="px-4 py-2">
+    <div className={className}>
       <Image
         src="/CosmicPigeonLogo.svg"
         alt="The Cosmic Pigeon"
-        width={150}
-        height={150}
+        width={size}
+        height={size}
       />
     </div>
   );
